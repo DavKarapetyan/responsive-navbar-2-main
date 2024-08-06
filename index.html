@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Vanadzor.am Front-End</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img
+            class="img__logo"
+            style="height: 64px; width: 44px"
+            src="https://s3-alpha-sig.figma.com/img/38a0/650d/b998c86e1b70bf4620fe1f6f729ceb23?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e~J4IlRgG9OtBVCQvXrzgIg4GOTXeIEjj4g3DignU31zGq2jIXZiSFLwy-oXN2t14djEmgxyXTFwe0fc6O~bgQBmVwKfDcxgPG1gDpWfZuckH~CdDP-wUonXVU~qxpjjlQPGs7hmZlQW~EOTkflWFXXVOu~JtzbdR4wruc4Vw~OzolXjXOrT9AGIbv9vas186l75rzERvaAsoJ8y4hP-Viy~Z7t5X5O9rt-5-bLLIW8ZraiPGgIv3~yzR9MeiF2DBdULt0i~KAuLbIXONx4PR3uX7NK8nQDJ7ONDWHO2b-BV~tKr6rD6l-XNokzXOMgrr2Kigm-BYZvGaNRatBxFJw__"
+          />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link">
+                <span>Լուրեր</span>
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Submenu Item 1</a></li>
+                <li><a href="#">Submenu Item 2</a></li>
+                <li><a href="#">Submenu Item 3</a></li>
+              </ul>
+            </li>
+
+            <!-- <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Լուրեր</span>
+              </a>
+            </li> -->
+
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link">
+                <span>Տիմ</span>
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Համայնքի ղեկավար</a></li>
+                <li><a href="#">Ավագանի</a></li>
+                <li class="submenu-item">
+                  <a href="#">Աշխատակազմ</a>
+                  <i class="ri-arrow-right-s-line"></i>
+                  <ul class="submenu">
+                    <li><a href="#">Աշխատակազմ</a></li>
+                    <li><a href="#">Ավագանի</a></li>
+                    <li><a href="#">Աշխատակազմ</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Համայնքի բյուջե</a></li>
+                <li><a href="#">Տուրքեր և վճարումներ</a></li>
+                <li><a href="#">Հաշվետվություններ</a></li>
+                <li><a href="#">Հանձնաժողովներ</a></li>
+                <li><a href="#">Ենթակայության հիմնարկներ</a></li>
+                <li class="submenu-item">
+                  <a href="#">Քաղաքաշինություն</a>
+                  <i class="ri-arrow-right-s-line"></i>
+                  <ul class="submenu">
+                    <li><a href="#">Սուբ-կատեգորիա 1</a></li>
+                    <li><a href="#">Սուբ-կատեգորիա 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Աճուրդներ</a></li>
+                <li><a href="#">Մրցույթներ</a></li>
+              </ul>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <span>Մեր Քաղաք</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <span>Ծրագրեր</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <span>Գնումներ</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <span>Մեդիա</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <span>Կապ</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="search">
+            <input class="form-input" placeholder="Որոնել" />
+          </div>
+          <div class="d-flex">
+            <h6 style="font-weight: 600">Հայ</h6>
+            <img
+              class="img-fluid rounded-circle"
+              style="width: 24px; height: 24px; margin-left: 4px"
+              src="https://s3-alpha-sig.figma.com/img/1906/0669/86d57c5876a6ed041d4429c6d6ef363e?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=koB3agL6zTYMzJxSlEz00ruW5nMA5BPuMYLJEa9t5iIrVmbReWgbk4SINyi8OfG6E0RZ~4oW5QtRoLmfclqDE1dJgTS3q5h96t67uZiHtdJ5-A8hUP5me8ceqMEexsvIMxDKbI60dCMSmlSI~6ulTBPBlLv7qQ75cFoVZuYr-lz1Daz~~w9SAQvBTqb3YblpIMqBRi7E7QIJmXcOlWhIQs7nBE9QADDKfXbrVv5tQFx-63QBDdkU6jky78wnf7XsiJFTZ98X59x-osJ4jtt61FmBTVex5RA28dwHAvODbzHKj-Ow7V2EfsgFJpRaEZqEia42id6CqH~jaOoDJAnu9A__"
+            />
+          </div>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <div class="mobile__top">
+              <a href="#" class="nav__logo">
+                <img
+                  style="height: 64px; width: 44px"
+                  src="https://s3-alpha-sig.figma.com/img/38a0/650d/b998c86e1b70bf4620fe1f6f729ceb23?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e~J4IlRgG9OtBVCQvXrzgIg4GOTXeIEjj4g3DignU31zGq2jIXZiSFLwy-oXN2t14djEmgxyXTFwe0fc6O~bgQBmVwKfDcxgPG1gDpWfZuckH~CdDP-wUonXVU~qxpjjlQPGs7hmZlQW~EOTkflWFXXVOu~JtzbdR4wruc4Vw~OzolXjXOrT9AGIbv9vas186l75rzERvaAsoJ8y4hP-Viy~Z7t5X5O9rt-5-bLLIW8ZraiPGgIv3~yzR9MeiF2DBdULt0i~KAuLbIXONx4PR3uX7NK8nQDJ7ONDWHO2b-BV~tKr6rD6l-XNokzXOMgrr2Kigm-BYZvGaNRatBxFJw__"
+                />
+              </a>
+              <i class="ri-close-large-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <svg
+            width="21"
+            height="14"
+            viewBox="0 0 21 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.25 1H19.25M1.25 7H19.25M1.25 13H19.25"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main>
+      <div class="img__div">
+        <img
+          class="img-fluid"
+          src="https://s3-alpha-sig.figma.com/img/3aad/e9d0/c85335165e5616beb515c18d10f9e590?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=R7et~un0xeLMxEvoxJoWP4dBYCtdrYTs1vNh9~55VBy5nQwLkuu2wm3fNKZXR0ryEqIZgwShvnkYmBYixXV59WapW8uHvbLtiAFATty2D1GdwETWE0RjxtIIq-mg63CL1vP3WJWPPGQvZXiKCtCHjpMpSD7RnVQ9qTTcQWKbSJP-3a~zsecC1kHrnRzNJKdA~c~LTUzFEbtttLO5wWs2Nz6KJltkPETvpbem8yTrDg9NUhUymIuycDFfVv7GkR7LtyyL9ZR6Rdn2IGOciwmi6AFL61GMJf9IdmhvBH0vsbegwe~kTCfB4z--AI9sVEAq5WnH767I8mTLf5noWdsWag__"
+        />
+        <h1 class="img__text">Վանաձորի քաղաքապետարան</h1>
+        <div class="carousel__container">
+          <h2>Հայտարարություններ</h2>
+          <div class="owl-carousel owl-theme mt-2 row">
+            <div class="col-lg-10">
+              <div
+                class="card__item"
+                style="
+                  background-image: url('https://s3-alpha-sig.figma.com/img/40ca/c38a/7cb6bcb16c898724e4fb89455079eacb?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KTC3m-XVuSGcjp6zMIarHDd~a3umh~6TX~xuPf1ztRbkY1UZA-pKifDOgG1dwG2rguoDtRRWjMn0N5UzGRwG9Azb0vkv19D6IpivmXs35Nk-oChdmNzJxKYwc1QDAkrZd7njtRFhHaeo~UUW2iAzR4IpNVQ9fdOFkxLedDB73JSiA0h2SmaAX7bkcgD6dObrdRBzux--IMI6GLJZbwfn2BlTE~FVi4kEVCnQwSlQdAbsNut0eILoyMEs8BIXjEB860cca8Kusew4531MT1qLjpXZNrhlKTAtwxZPoTwFa9Znm~sB9c~GTeUAZangsmRU0fjG4rXX2FBONWtgRP-cFA__');
+                "
+              >
+                <p>Վանաձորում նշվեց Հանրապետության տոնը</p>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div
+                class="card__item"
+                style="
+                  background-image: url('https://s3-alpha-sig.figma.com/img/40ca/c38a/7cb6bcb16c898724e4fb89455079eacb?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KTC3m-XVuSGcjp6zMIarHDd~a3umh~6TX~xuPf1ztRbkY1UZA-pKifDOgG1dwG2rguoDtRRWjMn0N5UzGRwG9Azb0vkv19D6IpivmXs35Nk-oChdmNzJxKYwc1QDAkrZd7njtRFhHaeo~UUW2iAzR4IpNVQ9fdOFkxLedDB73JSiA0h2SmaAX7bkcgD6dObrdRBzux--IMI6GLJZbwfn2BlTE~FVi4kEVCnQwSlQdAbsNut0eILoyMEs8BIXjEB860cca8Kusew4531MT1qLjpXZNrhlKTAtwxZPoTwFa9Znm~sB9c~GTeUAZangsmRU0fjG4rXX2FBONWtgRP-cFA__');
+                "
+              >
+                <p>Վանաձորում նշվեց Հանրապետության տոնը</p>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div
+                class="card__item"
+                style="
+                  background-image: url('https://s3-alpha-sig.figma.com/img/40ca/c38a/7cb6bcb16c898724e4fb89455079eacb?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KTC3m-XVuSGcjp6zMIarHDd~a3umh~6TX~xuPf1ztRbkY1UZA-pKifDOgG1dwG2rguoDtRRWjMn0N5UzGRwG9Azb0vkv19D6IpivmXs35Nk-oChdmNzJxKYwc1QDAkrZd7njtRFhHaeo~UUW2iAzR4IpNVQ9fdOFkxLedDB73JSiA0h2SmaAX7bkcgD6dObrdRBzux--IMI6GLJZbwfn2BlTE~FVi4kEVCnQwSlQdAbsNut0eILoyMEs8BIXjEB860cca8Kusew4531MT1qLjpXZNrhlKTAtwxZPoTwFa9Znm~sB9c~GTeUAZangsmRU0fjG4rXX2FBONWtgRP-cFA__');
+                "
+              >
+                <p>Վանաձորում նշվեց Հանրապետության տոնը</p>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div
+                class="card__item"
+                style="
+                  background-image: url('https://s3-alpha-sig.figma.com/img/40ca/c38a/7cb6bcb16c898724e4fb89455079eacb?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KTC3m-XVuSGcjp6zMIarHDd~a3umh~6TX~xuPf1ztRbkY1UZA-pKifDOgG1dwG2rguoDtRRWjMn0N5UzGRwG9Azb0vkv19D6IpivmXs35Nk-oChdmNzJxKYwc1QDAkrZd7njtRFhHaeo~UUW2iAzR4IpNVQ9fdOFkxLedDB73JSiA0h2SmaAX7bkcgD6dObrdRBzux--IMI6GLJZbwfn2BlTE~FVi4kEVCnQwSlQdAbsNut0eILoyMEs8BIXjEB860cca8Kusew4531MT1qLjpXZNrhlKTAtwxZPoTwFa9Znm~sB9c~GTeUAZangsmRU0fjG4rXX2FBONWtgRP-cFA__');
+                "
+              >
+                <p>Վանաձորում նշվեց Հանրապետության տոնը</p>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div
+                class="card__item"
+                style="
+                  background-image: url('https://s3-alpha-sig.figma.com/img/40ca/c38a/7cb6bcb16c898724e4fb89455079eacb?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KTC3m-XVuSGcjp6zMIarHDd~a3umh~6TX~xuPf1ztRbkY1UZA-pKifDOgG1dwG2rguoDtRRWjMn0N5UzGRwG9Azb0vkv19D6IpivmXs35Nk-oChdmNzJxKYwc1QDAkrZd7njtRFhHaeo~UUW2iAzR4IpNVQ9fdOFkxLedDB73JSiA0h2SmaAX7bkcgD6dObrdRBzux--IMI6GLJZbwfn2BlTE~FVi4kEVCnQwSlQdAbsNut0eILoyMEs8BIXjEB860cca8Kusew4531MT1qLjpXZNrhlKTAtwxZPoTwFa9Znm~sB9c~GTeUAZangsmRU0fjG4rXX2FBONWtgRP-cFA__');
+                "
+              >
+                <p>Վանաձորում նշվեց Հանրապետության տոնը</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-3" style="margin-top: 150px">
+        <div class="row">
+          <div class="col-lg-6 col-12 text__bg">
+            <p>
+              Հարգելի այցելուներ. <br />
+              <br />
+              Վանաձորի համայնքապետարանի պաշտոնական կայքէջը  ողջունում է ձեզ:
+              <br />
+              <br />
+              Այստեղ   դուք կարող եք ծանոթանալ ոչ միայն Վանաձոր համայնքի պատմա
+              մշակութային ժառանգությանը, այլ նաև իրազեկվել համայնքի զարգացմանը
+              միտված ծրագրերին, նոր նախաձեռնություններին , համայնքապետարանի
+              կողմից բնակչությանը մատուցվող  ծառայություններին:
+              <br /><br />
+              Կայքը հնարավարություն է տալիս ոչ միայն հետևել համայնքապետարանի
+              կողմից իրականացվող աշխատանքների ընթացքին , այլ նաև ձեր
+              նախաձեռնություններով, առաջարկներով և խորհուրդներով մասնակիցը լինել
+              համայնքային կառավարմանը, ինչի համար առկա է անհրաժեշտ գործիքակազմ:
+              <br /><br />
+              Եղեք ակտիվ և նախաձեռնող:
+            </p>
+          </div>
+          <div class="col-lg-6 col-12 img__bg">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/b325/56ba/6c3084531635723ab30c30a0b6326454?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=S5-Vhx~u0Kj4GdHvmalVb8~e5SU7wVOP65hELqYTL05zjao7quU07KH5QTVxp2FehRz2YRUlfMRwIzRFHo-5F2zxOXVC9PFVUhZUtJPt-hP9BBrxxJl5x9glJieSMrxghBPGxMzOz3CzL4Ll0b8L9qynrbQhGxf-t23PpQ5PRpoutOsBhVQGt1vpgP4bBJ8YL0Qn2RbV3kqG96sKr1EudEY7J0I352uZ6jTIda2libe7yasq63~I4oyODTxQ~G9fhOuynC5VdG0j8LcvxAPECaRx-sQczNAe3De63u0MvVuZM6w-pbUJq8YnFOqKdMSHZW6Zva2s7hMaj-Poz9ZKAg__"
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container d-flex flex-column py-3">
+        <h2>Լուրեր</h2>
+        <div class="row news__container mt-3">
+          <div class="col-lg-6">
+            <div
+              class="card__item"
+              style="
+                background-image: url('https://s3-alpha-sig.figma.com/img/b421/339c/ae95d064ebf61ee28650827ceda8b21a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iR9CblqAJ~8ZuuQbEHJVq1SM8MQJc2G9n65U2KeAFP~h-s~oSB6m0iAE2JGmZHbYPDZhIN79Gv8-794vRkw5pFgDJvQ1mYD3kMpOCHO8PQibER~78D0-k4o46B6dTSwicEnio87n1NIdRcPcEQOv72xiVbqN12ZbUHZ1Fe4W8394mqS850CCE253in5pksSIzb4Avi-pHpYK8aid7niT8DTRkepGBF6BVaurQTdZaMgUYOTfzxZwNdYr4ypIWOCG-RnOqvIlDeM64Sf~NDJjgtYB9cocan-6sePLEjJw0NX68x8YRmnnF5~r68lOV~hjEwYoSSCv3pqnPJh-pTof4Q__');
+              "
+            >
+              <div class="d-flex flex-column gap-1">
+                <p class="card__date">2024-05-30</p>
+                <p>
+                  Վանաձոր համայնքի ղեկավարի պաշտոնակատար Արկադի Փելեշյանն
+                  շնորհավորել է վաստակավոր մարզչին 80-ամյակի առթիվ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row gx-3 gy-3">
+              <div class="col-lg-6">
+                <div
+                  class="card__item"
+                  style="
+                    background-image: url('https://s3-alpha-sig.figma.com/img/95de/3a4d/638a939fc7c28da95d1da093d3cd150a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RB77o8p2HjwctnIKNykkPzmv9U72byoB2C88ZS94UwSnJNo8O8~f63bMfZW0UqzJkCiZlCrHCq3TJEKZL5fThcyITlmkP4e8Togl-Bcbkk7uqqcGmE~ADpkJ6MNh7gVAiH78BIE7rmrjU-6J0kx-oBnhBdlcALezS7M5hpQr~i3r6aHbZWTyVGXAavi3IEurFsRDNO5H369Q-wP1BZ3EkJ2lC-GRMcNQRP305jLKkDspXOpbatSR7gS80BmDhYquu8zfNuxhmrnUaYgKDx5DKJ-5-ysTbZAiiv3NzWZm4nysqTXXwOV9-bqOwczGtY67zk-W-eN4Mtr7FtVjeTMiHA__');
+                  "
+                >
+                  <div class="d-flex flex-column gap-1">
+                    <p class="card__date">2024-05-29</p>
+                    <p>Անցկացվեց Վանաձորի մանկապարտեզների սպորտլանդիա</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="card__item"
+                  style="
+                    background-image: url('https://s3-alpha-sig.figma.com/img/7030/e9a9/162a47bb3075bf7df58a6ada06d4ff90?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NBeuFanMkHJR4L~YPQ2s9oI6GDiiLCpYH5XeJhGCkQPinvnLeQ-IWUa9UCTjQUl64sS1OGjVNhwRw4UuIjRyA3TcXn9l8oiYzs5YLygSCfMHVooxWwI1gcVaktgV6IZOz2MhaFanUbs5rjt8XJFGUgNiu4sitXjL69Gx8jSPfnY05-DqZ6H~QQHG4rt9b7wdbKn4y7gvWXy0-lPKJOfmFXHKlu76y9jEXvZxCRLKTN5SIbL7IseYrOIM8EJfrKD2DBSVR7ombC-wl~a4jji8z9R~CuAnQUWdjG3bvcxyI4aE9kcYc1msa~RtscPphVZIFGipq7sEc9yldprX0GyTYA__');
+                  "
+                >
+                  <div class="d-flex flex-column gap-1">
+                    <p class="card__date">2024-05-28</p>
+                    <p>
+                      Վանաձոր համայնքի ղեկավարի պաշտոնակատար Արկադի Փելեշյանի
+                      շնո...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="card__item"
+                  style="
+                    background-image: url('https://s3-alpha-sig.figma.com/img/40ca/c38a/7cb6bcb16c898724e4fb89455079eacb?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KTC3m-XVuSGcjp6zMIarHDd~a3umh~6TX~xuPf1ztRbkY1UZA-pKifDOgG1dwG2rguoDtRRWjMn0N5UzGRwG9Azb0vkv19D6IpivmXs35Nk-oChdmNzJxKYwc1QDAkrZd7njtRFhHaeo~UUW2iAzR4IpNVQ9fdOFkxLedDB73JSiA0h2SmaAX7bkcgD6dObrdRBzux--IMI6GLJZbwfn2BlTE~FVi4kEVCnQwSlQdAbsNut0eILoyMEs8BIXjEB860cca8Kusew4531MT1qLjpXZNrhlKTAtwxZPoTwFa9Znm~sB9c~GTeUAZangsmRU0fjG4rXX2FBONWtgRP-cFA__');
+                  "
+                >
+                  <div class="d-flex flex-column gap-1">
+                    <p class="card__date">2024-05-28</p>
+                    <p>Վանաձորում նշվեց Հանրապետության տոնը</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="card__item"
+                  style="
+                    background-image: url('https://s3-alpha-sig.figma.com/img/c17a/3eb1/0bcc7bbf1fefa64250e2cd43a6abdafa?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TuKyo9DKh55v6d2t0faEfpOZAGMe0ns5mCIJyuLbBHsVR-8OooyYZWMULMnRbmsWU6TrYAbmr~~PrdDkkPMlJ9UGKn5xpmWSTLHpFJURW50IK4VQ1af8AMHEqeLBfx-LAkatLNrYiX2UpJcXXEdmLuj5OfxwvZMaF8KCCSNuhHo~u~2-7NrkfDltd8T627YXEB2kVSERw9EX8dvnOcm-3GgeyT2HoCPluhNhMKuX7l~Fl70QQ1stp0ZW6HKjpSbRpf4Lr0C9qIN6E~gmloOzF7rYu-3dE2quxlPE~O2ENxAkuVdFW7R4ORlnPDFplAGfdVjrobsrlmRCsFpFFB1bbw__');
+                  "
+                >
+                  <div class="d-flex flex-column gap-1">
+                    <p class="card__date">2024-05-26</p>
+                    <p>Տեղի ունեցավ «Լոռվա Ձորի» պարի հանրապետական փառատոնը</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-carousel d-none news__carousel owl-theme mt-2 row">
+          <div class="col-lg-10">
+            <div
+              class="card__item"
+              style="
+                background-image: url('https://s3-alpha-sig.figma.com/img/b421/339c/ae95d064ebf61ee28650827ceda8b21a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iR9CblqAJ~8ZuuQbEHJVq1SM8MQJc2G9n65U2KeAFP~h-s~oSB6m0iAE2JGmZHbYPDZhIN79Gv8-794vRkw5pFgDJvQ1mYD3kMpOCHO8PQibER~78D0-k4o46B6dTSwicEnio87n1NIdRcPcEQOv72xiVbqN12ZbUHZ1Fe4W8394mqS850CCE253in5pksSIzb4Avi-pHpYK8aid7niT8DTRkepGBF6BVaurQTdZaMgUYOTfzxZwNdYr4ypIWOCG-RnOqvIlDeM64Sf~NDJjgtYB9cocan-6sePLEjJw0NX68x8YRmnnF5~r68lOV~hjEwYoSSCv3pqnPJh-pTof4Q__');
+              "
+            >
+              <div class="d-flex flex-column gap-1">
+                <p class="card__date">2024-05-30</p>
+                <p>
+                  Վանաձոր համայնքի ղեկավարի պաշտոնակատար Արկադի Փելեշյանն
+                  շնորհավորել է վաստակավոր մարզչին 80-ամյակի առթիվ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div
+              class="card__item"
+              style="
+                background-image: url('https://s3-alpha-sig.figma.com/img/b421/339c/ae95d064ebf61ee28650827ceda8b21a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iR9CblqAJ~8ZuuQbEHJVq1SM8MQJc2G9n65U2KeAFP~h-s~oSB6m0iAE2JGmZHbYPDZhIN79Gv8-794vRkw5pFgDJvQ1mYD3kMpOCHO8PQibER~78D0-k4o46B6dTSwicEnio87n1NIdRcPcEQOv72xiVbqN12ZbUHZ1Fe4W8394mqS850CCE253in5pksSIzb4Avi-pHpYK8aid7niT8DTRkepGBF6BVaurQTdZaMgUYOTfzxZwNdYr4ypIWOCG-RnOqvIlDeM64Sf~NDJjgtYB9cocan-6sePLEjJw0NX68x8YRmnnF5~r68lOV~hjEwYoSSCv3pqnPJh-pTof4Q__');
+              "
+            >
+              <div class="d-flex flex-column gap-1">
+                <p class="card__date">2024-05-30</p>
+                <p>
+                  Վանաձոր համայնքի ղեկավարի պաշտոնակատար Արկադի Փելեշյանն
+                  շնորհավորել է վաստակավոր մարզչին 80-ամյակի առթիվ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div
+              class="card__item"
+              style="
+                background-image: url('https://s3-alpha-sig.figma.com/img/b421/339c/ae95d064ebf61ee28650827ceda8b21a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iR9CblqAJ~8ZuuQbEHJVq1SM8MQJc2G9n65U2KeAFP~h-s~oSB6m0iAE2JGmZHbYPDZhIN79Gv8-794vRkw5pFgDJvQ1mYD3kMpOCHO8PQibER~78D0-k4o46B6dTSwicEnio87n1NIdRcPcEQOv72xiVbqN12ZbUHZ1Fe4W8394mqS850CCE253in5pksSIzb4Avi-pHpYK8aid7niT8DTRkepGBF6BVaurQTdZaMgUYOTfzxZwNdYr4ypIWOCG-RnOqvIlDeM64Sf~NDJjgtYB9cocan-6sePLEjJw0NX68x8YRmnnF5~r68lOV~hjEwYoSSCv3pqnPJh-pTof4Q__');
+              "
+            >
+              <div class="d-flex flex-column gap-1">
+                <p class="card__date">2024-05-30</p>
+                <p>
+                  Վանաձոր համայնքի ղեկավարի պաշտոնակատար Արկադի Փելեշյանն
+                  շնորհավորել է վաստակավոր մարզչին 80-ամյակի առթիվ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div
+              class="card__item"
+              style="
+                background-image: url('https://s3-alpha-sig.figma.com/img/b421/339c/ae95d064ebf61ee28650827ceda8b21a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iR9CblqAJ~8ZuuQbEHJVq1SM8MQJc2G9n65U2KeAFP~h-s~oSB6m0iAE2JGmZHbYPDZhIN79Gv8-794vRkw5pFgDJvQ1mYD3kMpOCHO8PQibER~78D0-k4o46B6dTSwicEnio87n1NIdRcPcEQOv72xiVbqN12ZbUHZ1Fe4W8394mqS850CCE253in5pksSIzb4Avi-pHpYK8aid7niT8DTRkepGBF6BVaurQTdZaMgUYOTfzxZwNdYr4ypIWOCG-RnOqvIlDeM64Sf~NDJjgtYB9cocan-6sePLEjJw0NX68x8YRmnnF5~r68lOV~hjEwYoSSCv3pqnPJh-pTof4Q__');
+              "
+            >
+              <div class="d-flex flex-column gap-1">
+                <p class="card__date">2024-05-30</p>
+                <p>
+                  Վանաձոր համայնքի ղեկավարի պաշտոնակատար Արկադի Փելեշյանն
+                  շնորհավորել է վաստակավոր մարզչին 80-ամյակի առթիվ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div
+              class="card__item"
+              style="
+                background-image: url('https://s3-alpha-sig.figma.com/img/b421/339c/ae95d064ebf61ee28650827ceda8b21a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iR9CblqAJ~8ZuuQbEHJVq1SM8MQJc2G9n65U2KeAFP~h-s~oSB6m0iAE2JGmZHbYPDZhIN79Gv8-794vRkw5pFgDJvQ1mYD3kMpOCHO8PQibER~78D0-k4o46B6dTSwicEnio87n1NIdRcPcEQOv72xiVbqN12ZbUHZ1Fe4W8394mqS850CCE253in5pksSIzb4Avi-pHpYK8aid7niT8DTRkepGBF6BVaurQTdZaMgUYOTfzxZwNdYr4ypIWOCG-RnOqvIlDeM64Sf~NDJjgtYB9cocan-6sePLEjJw0NX68x8YRmnnF5~r68lOV~hjEwYoSSCv3pqnPJh-pTof4Q__');
+              "
+            >
+              <div class="d-flex flex-column gap-1">
+                <p class="card__date">2024-05-30</p>
+                <p>
+                  Վանաձոր համայնքի ղեկավարի պաշտոնակատար Արկադի Փելեշյանն
+                  շնորհավորել է վաստակավոր մարզչին 80-ամյակի առթիվ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div
+              class="card__item"
+              style="
+                background-image: url('https://s3-alpha-sig.figma.com/img/b421/339c/ae95d064ebf61ee28650827ceda8b21a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iR9CblqAJ~8ZuuQbEHJVq1SM8MQJc2G9n65U2KeAFP~h-s~oSB6m0iAE2JGmZHbYPDZhIN79Gv8-794vRkw5pFgDJvQ1mYD3kMpOCHO8PQibER~78D0-k4o46B6dTSwicEnio87n1NIdRcPcEQOv72xiVbqN12ZbUHZ1Fe4W8394mqS850CCE253in5pksSIzb4Avi-pHpYK8aid7niT8DTRkepGBF6BVaurQTdZaMgUYOTfzxZwNdYr4ypIWOCG-RnOqvIlDeM64Sf~NDJjgtYB9cocan-6sePLEjJw0NX68x8YRmnnF5~r68lOV~hjEwYoSSCv3pqnPJh-pTof4Q__');
+              "
+            >
+              <div class="d-flex flex-column gap-1">
+                <p class="card__date">2024-05-30</p>
+                <p>
+                  Վանաձոր համայնքի ղեկավարի պաշտոնակատար Արկադի Փելեշյանն
+                  շնորհավորել է վաստակավոր մարզչին 80-ամյակի առթիվ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div
+              class="card__item"
+              style="
+                background-image: url('https://s3-alpha-sig.figma.com/img/b421/339c/ae95d064ebf61ee28650827ceda8b21a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iR9CblqAJ~8ZuuQbEHJVq1SM8MQJc2G9n65U2KeAFP~h-s~oSB6m0iAE2JGmZHbYPDZhIN79Gv8-794vRkw5pFgDJvQ1mYD3kMpOCHO8PQibER~78D0-k4o46B6dTSwicEnio87n1NIdRcPcEQOv72xiVbqN12ZbUHZ1Fe4W8394mqS850CCE253in5pksSIzb4Avi-pHpYK8aid7niT8DTRkepGBF6BVaurQTdZaMgUYOTfzxZwNdYr4ypIWOCG-RnOqvIlDeM64Sf~NDJjgtYB9cocan-6sePLEjJw0NX68x8YRmnnF5~r68lOV~hjEwYoSSCv3pqnPJh-pTof4Q__');
+              "
+            >
+              <div class="d-flex flex-column gap-1">
+                <p class="card__date">2024-05-30</p>
+                <p>
+                  Վանաձոր համայնքի ղեկավարի պաշտոնակատար Արկադի Փելեշյանն
+                  շնորհավորել է վաստակավոր մարզչին 80-ամյակի առթիվ
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="align-self-xl-end align-self-center mt-3"
+          >Ավելին <i class="ri-arrow-right-s-line"></i>
+        </a>
+      </div>
+      <hr />
+      <div class="container py-3">
+        <div class="row align-items-start justify-content-center gap-3">
+          <div
+            class="col-lg-5 d-flex align-items-center justify-content-center box__border"
+          >
+            <svg
+              width="94"
+              height="100"
+              viewBox="0 0 94 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M84.2344 43.75C85.6016 43.75 86.8711 43.9941 88.043 44.4824C89.2148 44.9707 90.2565 45.638 91.168 46.4844C92.0794 47.3307 92.763 48.3561 93.2188 49.5605C93.6745 50.765 93.9349 52.0508 94 53.418C94 54.6875 93.7559 55.9245 93.2676 57.1289C92.7793 58.3333 92.0794 59.3913 91.168 60.3027L56.1582 95.3125L37.75 99.9023L42.3398 81.4941L77.3496 46.5332C78.2936 45.5892 79.3516 44.8893 80.5234 44.4336C81.6953 43.9779 82.9323 43.75 84.2344 43.75ZM87.75 53.418C87.75 52.3763 87.4245 51.5462 86.7734 50.9277C86.1224 50.3092 85.276 50 84.2344 50C83.7786 50 83.3392 50.0651 82.916 50.1953C82.4928 50.3255 82.1185 50.5697 81.793 50.9277L48.0039 84.7168L46.3438 91.3086L52.9355 89.6484L86.7246 55.9082C87.4082 55.2246 87.75 54.3945 87.75 53.418ZM6.5 6.25V93.75H31.207L29.6934 100H0.25V0H54.6934L81.5 26.8066V36.1816C80.2956 36.3444 79.2214 36.5885 78.2773 36.9141C77.3333 37.2396 76.3242 37.7441 75.25 38.4277V31.25H50.25V6.25H6.5ZM56.5 10.6934V25H70.8066L56.5 10.6934ZM62.75 43.75V50H19V43.75H62.75ZM19 75V68.75H44.0488L37.7988 75H19ZM56.5488 56.25L50.2988 62.5H19V56.25H56.5488Z"
+                fill="#128799"
+              />
+            </svg>
+          </div>
+          <div class="col-lg-5">
+            <h2>Կառավարման Տեղեկատվական Համակարգ</h2>
+            <p style="color: #57636c">
+              Օնլայն դիմում ուղղարկելու համար դիմել համայնքապետարան
+            </p>
+            <button class="btn__primary" style="width: 30%">
+              Ավելին <i class="ri-arrow-right-s-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container py-3">
+        <div class="row gy-3">
+          <div class="col-lg-3">
+            <div class="box__border d-flex flex-column align-items-center">
+              <h3>Համայնքի բյուջե</h3>
+              <svg
+                class="mt-3"
+                width="100"
+                height="100"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M93.75 45.2687V43.7062H95.3125C96.5557 43.7062 97.748 43.2123 98.6271 42.3332C99.5061 41.4541 100 40.2619 100 39.0187V32.7687C100 32.7187 99.975 32.6749 99.9719 32.6249C99.9619 32.5189 99.941 32.4141 99.9094 32.3124C99.8187 32.0236 99.6461 31.7674 99.4125 31.5749C99.375 31.5437 99.35 31.4999 99.3094 31.4687L54.3469 1.36241C53.0617 0.498809 51.5484 0.0375977 50 0.0375977C48.4516 0.0375977 46.9383 0.498809 45.6531 1.36241L0.69375 31.4718C0.65 31.4999 0.628125 31.5437 0.590625 31.578C0.353673 31.7674 0.180299 32.0248 0.09375 32.3155C0.0621261 32.4172 0.0411799 32.522 0.03125 32.628C0.03125 32.678 0.003125 32.7187 0.003125 32.7718V39.0218C0.003125 40.265 0.496985 41.4573 1.37606 42.3363C2.25514 43.2154 3.44742 43.7093 4.69063 43.7093H6.25V45.2718C6.254 46.2378 6.55638 47.179 7.11576 47.9666C7.67514 48.7542 8.46421 49.3498 9.375 49.6718V81.3499C8.46421 81.6719 7.67514 82.2675 7.11576 83.0551C6.55638 83.8427 6.254 84.7839 6.25 85.7499V87.4593H4.6875C3.4443 87.4593 2.25201 87.9531 1.37294 88.8322C0.49386 89.7113 0 90.9036 0 92.1468L0 98.3968C0 98.8112 0.16462 99.2086 0.457646 99.5016C0.750671 99.7947 1.1481 99.9593 1.5625 99.9593H98.4375C98.8519 99.9593 99.2493 99.7947 99.5424 99.5016C99.8354 99.2086 100 98.8112 100 98.3968V92.1468C100 90.9036 99.5061 89.7113 98.6271 88.8322C97.748 87.9531 96.5557 87.4593 95.3125 87.4593H93.75V85.7499C93.746 84.7839 93.4436 83.8427 92.8842 83.0551C92.3249 82.2675 91.5358 81.6719 90.625 81.3499V49.6687C91.5358 49.3467 92.3249 48.7511 92.8842 47.9635C93.4436 47.1759 93.746 46.2347 93.75 45.2687ZM47.3938 3.95928C48.1643 3.4399 49.0723 3.16242 50.0016 3.16242C50.9308 3.16242 51.8388 3.4399 52.6094 3.95928L93.2969 31.2062H6.70312L47.3938 3.95928ZM9.375 85.7468C9.37823 85.3996 9.49843 85.0636 9.71617 84.7931C9.93392 84.5226 10.2365 84.3335 10.575 84.2562C10.6924 84.2949 10.8142 84.319 10.9375 84.328H20.3125C20.4358 84.319 20.5576 84.2949 20.675 84.2562C21.0135 84.3335 21.3161 84.5226 21.5338 84.7931C21.7516 85.0636 21.8718 85.3996 21.875 85.7468V87.3093H9.375V85.7468ZM10.9375 46.8312C10.5231 46.8312 10.1257 46.6665 9.83265 46.3735C9.53962 46.0805 9.375 45.6831 9.375 45.2687V43.7062H21.875V45.2687C21.875 45.6831 21.7104 46.0805 21.4174 46.3735C21.1243 46.6665 20.7269 46.8312 20.3125 46.8312H10.9375ZM18.75 49.9562V81.0593H12.5V49.9562H18.75ZM95.3125 90.5812C95.7269 90.5812 96.1243 90.7458 96.4174 91.0388C96.7104 91.3318 96.875 91.7293 96.875 92.1437V96.8312H3.125V92.1437C3.125 91.7293 3.28962 91.3318 3.58265 91.0388C3.87567 90.7458 4.2731 90.5812 4.6875 90.5812H37.5C37.9144 90.5812 38.3118 90.4165 38.6049 90.1235C38.8979 89.8305 39.0625 89.4331 39.0625 89.0187C39.0625 88.6043 38.8979 88.2068 38.6049 87.9138C38.3118 87.6208 37.9144 87.4562 37.5 87.4562H25V85.7468C24.996 84.7808 24.6936 83.8396 24.1342 83.0519C23.5749 82.2643 22.7858 81.6688 21.875 81.3468V49.6687C22.7858 49.3467 23.5749 48.7511 24.1342 47.9635C24.6936 47.1759 24.996 46.2347 25 45.2687V43.7062H34.375C34.7894 43.7062 35.1868 43.5415 35.4799 43.2485C35.7729 42.9555 35.9375 42.5581 35.9375 42.1437C35.9375 41.7293 35.7729 41.3318 35.4799 41.0388C35.1868 40.7458 34.7894 40.5812 34.375 40.5812H4.6875C4.2731 40.5812 3.87567 40.4165 3.58265 40.1235C3.28962 39.8305 3.125 39.4331 3.125 39.0187V34.3312H96.875V39.0187C96.875 39.4331 96.7104 39.8305 96.4174 40.1235C96.1243 40.4165 95.7269 40.5812 95.3125 40.5812H64.0625C63.6481 40.5812 63.2507 40.7458 62.9576 41.0388C62.6646 41.3318 62.5 41.7293 62.5 42.1437C62.5 42.5581 62.6646 42.9555 62.9576 43.2485C63.2507 43.5415 63.6481 43.7062 64.0625 43.7062H75V45.2687C75.004 46.2347 75.3064 47.1759 75.8658 47.9635C76.4251 48.7511 77.2142 49.3467 78.125 49.6687V81.3499C77.2142 81.6719 76.4251 82.2675 75.8658 83.0551C75.3064 83.8427 75.004 84.7839 75 85.7499V87.4593H60.9375C60.5231 87.4593 60.1257 87.6239 59.8326 87.9169C59.5396 88.21 59.375 88.6074 59.375 89.0218C59.375 89.4362 59.5396 89.8336 59.8326 90.1266C60.1257 90.4197 60.5231 90.5843 60.9375 90.5843L95.3125 90.5812ZM89.0625 84.3312C89.1858 84.3222 89.3076 84.298 89.425 84.2593C89.7635 84.3366 90.0661 84.5258 90.2838 84.7962C90.5016 85.0667 90.6218 85.4027 90.625 85.7499V87.3124H78.125V85.7499C78.1282 85.4027 78.2484 85.0667 78.4662 84.7962C78.6839 84.5258 78.9865 84.3366 79.325 84.2593C79.4424 84.298 79.5642 84.3222 79.6875 84.3312H89.0625ZM81.25 81.0593V49.9562H87.5V81.0593H81.25ZM89.0625 46.8312H79.6875C79.2731 46.8312 78.8757 46.6665 78.5826 46.3735C78.2896 46.0805 78.125 45.6831 78.125 45.2687V43.7062H90.625V45.2687C90.625 45.6831 90.4604 46.0805 90.1674 46.3735C89.8743 46.6665 89.4769 46.8312 89.0625 46.8312ZM70.3125 60.8937C70.3161 57.1685 69.2952 53.5142 67.3615 50.3302C65.4278 47.1463 62.6558 44.5554 59.3486 42.841C56.0415 41.1265 52.3265 40.3545 48.6101 40.6094C44.8937 40.8643 41.319 42.1362 38.2769 44.2862C35.2348 46.4361 32.8424 49.3811 31.3616 52.7993C29.8807 56.2174 29.3683 59.9769 29.8804 63.6667C30.3925 67.3565 31.9094 70.8343 34.2651 73.72C36.6209 76.6056 39.7249 78.7878 43.2375 80.028C43.6291 80.164 44.0587 80.1387 44.4317 79.9579C44.8047 79.7772 45.0906 79.4556 45.2266 79.064C45.3625 78.6724 45.3373 78.2428 45.1565 77.8698C44.9757 77.4968 44.6541 77.2108 44.2625 77.0749C40.4413 75.7217 37.2214 73.0615 35.1717 69.5642C33.1219 66.0669 32.3743 61.9577 33.0608 57.9625C33.7473 53.9674 35.8238 50.3435 38.9234 47.731C42.0231 45.1186 45.9463 43.6858 50 43.6858C54.0537 43.6858 57.9769 45.1186 61.0766 47.731C64.1762 50.3435 66.2527 53.9674 66.9392 57.9625C67.6257 61.9577 66.8781 66.0669 64.8283 69.5642C62.7786 73.0615 59.5587 75.7217 55.7375 77.0749C55.3871 77.195 55.0907 77.4356 54.9013 77.7539C54.7118 78.0722 54.6416 78.4475 54.7032 78.8127C54.7648 79.178 54.9541 79.5095 55.2374 79.7481C55.5207 79.9868 55.8796 80.117 56.25 80.1155C56.4243 80.1159 56.5975 80.0874 56.7625 80.0312C60.7273 78.6411 64.1615 76.0522 66.5893 72.6232C69.0172 69.1943 70.3183 65.0951 70.3125 60.8937ZM50 12.3093C48.7639 12.3093 47.5555 12.6758 46.5277 13.3626C45.4999 14.0494 44.6988 15.0255 44.2258 16.1675C43.7527 17.3095 43.6289 18.5662 43.8701 19.7786C44.1112 20.991 44.7065 22.1046 45.5806 22.9787C46.4547 23.8528 47.5683 24.448 48.7807 24.6892C49.9931 24.9303 51.2497 24.8066 52.3918 24.3335C53.5338 23.8605 54.5099 23.0594 55.1967 22.0316C55.8834 21.0038 56.25 19.7954 56.25 18.5593C56.25 16.9017 55.5915 15.312 54.4194 14.1399C53.2473 12.9678 51.6576 12.3093 50 12.3093ZM50 21.6843C49.3819 21.6843 48.7777 21.501 48.2638 21.1576C47.7499 20.8142 47.3494 20.3262 47.1129 19.7552C46.8764 19.1841 46.8145 18.5558 46.935 17.9496C47.0556 17.3434 47.3533 16.7866 47.7903 16.3496C48.2273 15.9125 48.7842 15.6149 49.3903 15.4943C49.9965 15.3737 50.6249 15.4356 51.1959 15.6722C51.7669 15.9087 52.255 16.3092 52.5983 16.8231C52.9417 17.337 53.125 17.9412 53.125 18.5593C53.125 19.3881 52.7958 20.1829 52.2097 20.769C51.6237 21.355 50.8288 21.6843 50 21.6843ZM53.3156 83.4968L51.5625 85.2499V79.6437C51.5625 79.2293 51.3979 78.8318 51.1049 78.5388C50.8118 78.2458 50.4144 78.0812 50 78.0812C49.5856 78.0812 49.1882 78.2458 48.8951 78.5388C48.6021 78.8318 48.4375 79.2293 48.4375 79.6437V85.2468L46.6844 83.4937C46.3897 83.209 45.995 83.0516 45.5853 83.0551C45.1756 83.0587 44.7837 83.223 44.494 83.5127C44.2043 83.8024 44.04 84.1943 44.0364 84.604C44.0329 85.0137 44.1904 85.4083 44.475 85.703L48.8906 90.1187C49.0358 90.2642 49.2082 90.3796 49.398 90.4584C49.5878 90.5372 49.7914 90.5777 49.9969 90.5777C50.2024 90.5777 50.4059 90.5372 50.5957 90.4584C50.7856 90.3796 50.958 90.2642 51.1031 90.1187L55.5188 85.703C55.8034 85.4083 55.9609 85.0137 55.9573 84.604C55.9537 84.1943 55.7894 83.8024 55.4997 83.5127C55.21 83.223 54.8181 83.0587 54.4084 83.0551C53.9988 83.0516 53.6041 83.209 53.3094 83.4937L53.3156 83.4968ZM51.5625 68.7062H48.4375C47.6087 68.7062 46.8138 68.3769 46.2278 67.7909C45.6417 67.2048 45.3125 66.41 45.3125 65.5812C45.3125 65.1668 45.1479 64.7693 44.8549 64.4763C44.5618 64.1833 44.1644 64.0187 43.75 64.0187C43.3356 64.0187 42.9382 64.1833 42.6451 64.4763C42.3521 64.7693 42.1875 65.1668 42.1875 65.5812C42.1875 67.2388 42.846 68.8285 44.0181 70.0006C45.1902 71.1727 46.7799 71.8312 48.4375 71.8312V73.3937C48.4375 73.8081 48.6021 74.2055 48.8951 74.4985C49.1882 74.7915 49.5856 74.9562 50 74.9562C50.4144 74.9562 50.8118 74.7915 51.1049 74.4985C51.3979 74.2055 51.5625 73.8081 51.5625 73.3937V71.8312C53.2201 71.8312 54.8098 71.1727 55.9819 70.0006C57.154 68.8285 57.8125 67.2388 57.8125 65.5812C57.8125 63.9236 57.154 62.3338 55.9819 61.1617C54.8098 59.9896 53.2201 59.3312 51.5625 59.3312H48.4375C47.6087 59.3312 46.8138 59.0019 46.2278 58.4159C45.6417 57.8298 45.3125 57.035 45.3125 56.2062C45.3125 55.3774 45.6417 54.5825 46.2278 53.9964C46.8138 53.4104 47.6087 53.0812 48.4375 53.0812H51.5625C52.3913 53.0812 53.1862 53.4104 53.7722 53.9964C54.3583 54.5825 54.6875 55.3774 54.6875 56.2062C54.6875 56.6206 54.8521 57.018 55.1451 57.311C55.4382 57.604 55.8356 57.7687 56.25 57.7687C56.6644 57.7687 57.0618 57.604 57.3549 57.311C57.6479 57.018 57.8125 56.6206 57.8125 56.2062C57.8125 54.5486 57.154 52.9588 55.9819 51.7867C54.8098 50.6146 53.2201 49.9562 51.5625 49.9562V48.3937C51.5625 47.9793 51.3979 47.5818 51.1049 47.2888C50.8118 46.9958 50.4144 46.8312 50 46.8312C49.5856 46.8312 49.1882 46.9958 48.8951 47.2888C48.6021 47.5818 48.4375 47.9793 48.4375 48.3937V49.9562C46.7799 49.9562 45.1902 50.6146 44.0181 51.7867C42.846 52.9588 42.1875 54.5486 42.1875 56.2062C42.1875 57.8638 42.846 59.4535 44.0181 60.6256C45.1902 61.7977 46.7799 62.4562 48.4375 62.4562H51.5625C52.3913 62.4562 53.1862 62.7854 53.7722 63.3714C54.3583 63.9575 54.6875 64.7524 54.6875 65.5812C54.6875 66.41 54.3583 67.2048 53.7722 67.7909C53.1862 68.3769 52.3913 68.7062 51.5625 68.7062Z"
+                  fill="#128799"
+                />
+              </svg>
+              <p class="mt-3">
+                Հաղորդում Վանաձոր համայնքի 2024 թվականի բյուջեի 3 ամսվա կատարման
+                վերաբերյալ
+              </p>
+              <button class="btn__primary mt-5 w-100">Ավելին</button>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box__border d-flex flex-column align-items-center">
+              <h3>Վանաձոր համայնքի ներդրումային ծրագրեր</h3>
+              <svg
+                class="mt-3"
+                width="100"
+                height="100"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_987_2403)">
+                  <path
+                    d="M15.0364 54.0586C14.9205 52.3567 13.5163 51.0035 11.7882 51.0035H4.2648C2.45911 51.0035 0.988525 52.4731 0.988525 54.2797V81.8226C0.988525 83.6283 2.45911 85.098 4.2648 85.098H11.7882C13.1185 85.098 14.2609 84.2956 14.7713 83.1515L40.3248 96.1771C46.8787 99.5266 54.799 100.042 62.0275 97.0264C71.8333 92.9478 89.2334 85.4465 95.6059 81.0251C99.1254 78.5933 100.071 73.7086 97.7161 70.1355C97.7122 70.1307 97.7084 70.1259 97.7065 70.1212C97.695 70.103 97.6816 70.0838 97.6701 70.0656C95.8376 67.3303 92.0463 66.1259 88.7202 67.2163C87.0372 67.7723 83.5112 68.9311 79.6718 70.1571C86.4114 65.0028 90.5699 56.9371 90.5699 48.0786C90.5699 39.8735 86.981 32.1976 80.8297 26.9457C81.0103 26.7965 81.199 26.6577 81.3634 26.4889C82.6349 25.1907 83.3338 23.4913 83.3338 21.7057C83.3338 17.9756 80.3007 14.9406 76.5706 14.9406H76.4503L78.6769 8.58335C79.0886 7.4019 78.9163 6.15343 78.2097 5.15965C77.4821 4.13904 76.3064 3.52918 75.0598 3.52918C73.9837 3.52918 72.9822 3.97916 72.4269 4.82455L72.1033 4.08543C71.3144 2.20124 69.4858 0.984375 67.4465 0.984375C65.838 0.984375 64.3425 1.74551 63.3909 3.03516C63.3238 3.10985 63.2626 3.1893 63.207 3.27451C62.9141 3.71779 62.4852 3.78387 62.2554 3.78387C61.8705 3.78387 61.5163 3.59334 61.3075 3.27547C60.3673 1.84606 58.7857 0.993002 57.0796 0.993002C55.0403 0.993002 53.2155 2.207 52.4553 4.02226L52.2849 4.8083C50.6783 3.01985 47.6491 3.25249 46.2991 5.16253C45.5906 6.1592 45.4221 7.40863 45.8376 8.58912L48.0872 15.0158C44.4544 15.4221 42.0788 18.4284 42.0788 21.7057C42.0788 23.8284 43.053 25.7172 44.5703 26.9613C38.4395 32.2158 34.8638 39.885 34.8638 48.0786C34.8638 50.1027 35.0991 52.0985 35.5264 54.05C33.4313 54.0509 43.116 54.0468 15.0364 54.0586ZM11.1371 81.1764H4.91009V54.925H11.1371V81.1764ZM89.9457 70.9416C91.6173 70.394 93.5417 70.9483 94.4111 72.2485L94.413 72.2504C94.4226 72.2657 94.4322 72.2801 94.4417 72.2954C95.6327 74.1011 95.156 76.5703 93.3733 77.8005C87.2975 82.017 70.1828 89.3872 60.5205 93.4064C54.642 95.8574 47.7927 95.5893 42.1075 92.6835L15.0606 78.8968V57.9802H35.5703C44.2604 57.9802 43.4053 67.0833 54.1805 67.0833H65.2637C67.0858 67.1043 68.7814 68.3548 69.1202 70.1272C69.4778 72.3741 67.7077 74.306 65.5661 74.306H39.894C38.8102 74.306 37.9332 75.1839 37.9332 76.2668C37.9332 77.3496 38.8102 78.2275 39.894 78.2275H65.5661C67.949 78.2275 87.5055 71.7479 89.9457 70.9416ZM52.1776 8.72502C53.7459 8.72502 55.1303 7.78485 55.6645 6.42818L56.0437 5.60096C56.3118 4.96332 56.9034 4.91449 57.0796 4.91449C57.3075 4.91449 57.7345 4.98151 58.0313 5.43053C58.9676 6.85516 60.5473 7.70535 62.2554 7.70535C63.8638 7.70535 65.3574 6.95283 66.3091 5.67755C66.3818 5.59808 66.4469 5.51383 66.5063 5.42288C66.7993 4.9729 67.2206 4.90588 67.4465 4.90588C67.6227 4.90588 68.2182 4.95663 68.4977 5.62586L68.8213 6.36883C69.4187 7.78581 70.7955 8.70204 72.3274 8.70204C73.2522 8.70204 74.1369 8.3612 74.8071 7.76857L72.2967 14.9406H52.2159L49.7056 7.76951C50.3949 8.38132 51.2719 8.72502 52.1776 8.72502ZM46.8544 19.6836C48.0271 18.4871 49.4813 18.9757 50.8238 18.8621C57.8198 18.8621 70.5588 18.8621 76.5706 18.8621C78.137 18.8621 79.4122 20.1374 79.4122 21.7056C79.4122 23.0735 78.414 24.4178 76.7506 24.5655L48.8631 24.5683L48.6007 24.5578C47.1187 24.4161 46.0004 23.1896 46.0004 21.7056C46.0004 20.9407 46.2934 20.2341 46.8544 19.6836ZM48.9894 28.4899H76.427C82.8398 32.9658 86.6484 40.2431 86.6484 48.0786C86.6484 57.4134 81.2868 65.74 73.0301 69.6587C72.4965 66.095 69.4343 63.1617 65.5661 63.1617H65.2637C65.2481 63.1615 65.2332 63.1569 65.2176 63.1569H54.1767C51.8954 63.1569 49.7627 62.356 48.0727 61.019C48.0434 60.9954 48.0114 60.976 47.9822 60.9521C46.1616 59.4755 44.738 56.1766 39.7044 54.6675C39.0936 52.5372 38.7853 50.3266 38.7853 48.0786C38.7853 40.246 42.5882 32.9696 48.9894 28.4899Z"
+                    fill="#128799"
+                  />
+                  <path
+                    d="M62.7131 62.7862C71.9023 62.7862 79.3778 55.3098 79.3778 46.1195C79.3778 36.9293 71.9023 29.4529 62.7131 29.4529C53.5238 29.4529 46.0464 36.9293 46.0464 46.1195C46.0464 55.3098 53.5238 62.7862 62.7131 62.7862ZM62.7131 33.3744C69.7405 33.3744 75.4562 39.0921 75.4562 46.1195C75.4562 53.147 69.7405 58.8646 62.7131 58.8646C55.6856 58.8646 49.968 53.147 49.968 46.1195C49.968 39.0921 55.6856 33.3744 62.7131 33.3744Z"
+                    fill="#128799"
+                  />
+                  <path
+                    d="M58.9312 50.3312C58.6341 50.2 58.2546 50.2264 58.0083 50.4825C57.6224 50.8862 57.7604 51.5403 58.3223 51.775C59.5765 52.3198 60.9322 52.6233 62.3894 52.6865V54.1685C62.3894 54.4356 62.564 54.5869 62.8068 54.5869C63.0526 54.5869 63.2434 54.4325 63.2434 54.1685V52.6865C65.6269 52.5521 67.7088 51.2702 67.7088 48.9822C67.7088 46.4415 65.6828 45.7121 63.2434 45.144V40.6221C64.2181 40.6345 65.1697 40.8059 66.0927 41.1353C66.7096 41.3793 67.1573 40.9275 67.1573 40.4316C67.1573 40.0524 66.9793 39.7987 66.625 39.6723C65.5872 39.2922 64.4594 39.0835 63.2434 39.0452V37.5823C63.2434 37.3266 63.0623 37.1448 62.8068 37.1448C62.5479 37.1448 62.3894 37.3309 62.3894 37.5823V39.0644C59.4212 39.2227 57.924 40.9449 57.924 42.94C57.924 45.3784 60.0738 46.1191 62.3894 46.7208V51.0723C61.1084 51.034 59.9575 50.787 58.9312 50.3312ZM63.2434 46.9295C64.4494 47.2488 65.9988 47.6663 65.9988 48.8683C65.9988 50.1981 65.0797 50.9267 63.2434 51.0531V46.9295ZM59.6339 42.8069C59.6339 41.4215 61.0077 40.7873 62.3894 40.6604V44.9352C61.0693 44.601 59.6339 44.1698 59.6339 42.8069Z"
+                    fill="#128799"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_987_2403">
+                    <rect width="100" height="100" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p class="mt-3">
+                Օնլայն դիմում ուղղարկելու համար դիմել համայնքապետարան
+              </p>
+              <button class="btn__primary mt-5 w-100">Ավելին</button>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box__border d-flex flex-column align-items-center">
+              <h3>Ներքաղաքային երթուղիներ</h3>
+              <svg
+                class="mt-3"
+                width="100"
+                height="100"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M77.1484 7.61719C76.8587 7.61719 76.5755 7.7031 76.3346 7.86406C76.0937 8.02502 75.906 8.25379 75.7951 8.52146C75.6842 8.78913 75.6552 9.08366 75.7117 9.36781C75.7683 9.65196 75.9078 9.91297 76.1126 10.1178C76.3175 10.3227 76.5785 10.4622 76.8627 10.5187C77.1468 10.5752 77.4413 10.5462 77.709 10.4354C77.9767 10.3245 78.2055 10.1367 78.3664 9.89585C78.5274 9.65496 78.6133 9.37175 78.6133 9.08203C78.6133 8.69353 78.459 8.32094 78.1842 8.04623C77.9095 7.77152 77.5369 7.61719 77.1484 7.61719ZM93.8477 26.9531C93.1486 26.9539 92.4784 27.2319 91.9841 27.7263C91.4898 28.2206 91.2117 28.8908 91.2109 29.5898V41.6992C91.2117 42.3983 91.4898 43.0685 91.9841 43.5628C92.4784 44.0571 93.1486 44.3352 93.8477 44.3359H97.3633C98.0623 44.3352 98.7326 44.0571 99.2269 43.5628C99.7212 43.0685 99.9992 42.3983 100 41.6992V29.5898C99.9992 28.8908 99.7212 28.2206 99.2269 27.7263C98.7326 27.2319 98.0623 26.9539 97.3633 26.9531H97.0703V23.9258C97.0694 23.1749 96.7708 22.4551 96.2399 21.9242C95.7089 21.3933 94.9891 21.0946 94.2383 21.0938H87.4023V7.32422C87.4002 5.38238 86.6278 3.5207 85.2547 2.14761C83.8816 0.774525 82.02 0.00217121 80.0781 0L19.9219 0C17.98 0.00217121 16.1184 0.774525 14.7453 2.14761C13.3722 3.5207 12.5998 5.38238 12.5977 7.32422V21.0938H5.76172C5.01089 21.0946 4.29106 21.3933 3.76014 21.9242C3.22922 22.4551 2.93057 23.1749 2.92969 23.9258V26.9531H2.63672C1.93766 26.9539 1.26745 27.2319 0.773134 27.7263C0.278821 28.2206 0.000775445 28.8908 0 29.5898L0 41.6992C0.000775445 42.3983 0.278821 43.0685 0.773134 43.5628C1.26745 44.0571 1.93766 44.3352 2.63672 44.3359H6.15234C6.85141 44.3352 7.52162 44.0571 8.01593 43.5628C8.51024 43.0685 8.78829 42.3983 8.78906 41.6992V29.5898C8.78829 28.8908 8.51024 28.2206 8.01593 27.7263C7.52162 27.2319 6.85141 26.9539 6.15234 26.9531H5.85938V24.0234H12.5977V79.3945C12.6001 81.116 13.208 82.7819 14.3149 84.1003C15.4218 85.4188 16.9572 86.3058 18.6523 86.6063V95.6055C18.6521 96.1045 18.7374 96.6 18.9043 97.0703H1.46484C1.07634 97.0703 0.703754 97.2246 0.429043 97.4994C0.154331 97.7741 0 98.1467 0 98.5352C0 98.9237 0.154331 99.2962 0.429043 99.571C0.703754 99.8457 1.07634 100 1.46484 100H98.5352C98.9237 100 99.2962 99.8457 99.571 99.571C99.8457 99.2962 100 98.9237 100 98.5352C100 98.1467 99.8457 97.7741 99.571 97.4994C99.2962 97.2246 98.9237 97.0703 98.5352 97.0703H81.0957C81.2626 96.6 81.3479 96.1045 81.3477 95.6055V86.6063C83.0428 86.3058 84.5782 85.4188 85.6851 84.1003C86.792 82.7819 87.3999 81.116 87.4023 79.3945V24.0234H94.1406V26.9531H93.8477ZM5.85938 41.4062H2.92969V29.8828H5.85938V41.4062ZM15.5273 18.1641H48.5352V49.4141H15.5273V18.1641ZM31.543 95.6055C31.5426 95.9938 31.3881 96.3662 31.1135 96.6408C30.8388 96.9154 30.4665 97.0699 30.0781 97.0703H23.0469C22.6585 97.0699 22.2862 96.9154 22.0115 96.6408C21.7369 96.3662 21.5824 95.9938 21.582 95.6055V86.7188H31.543V95.6055ZM34.2207 97.0703C34.3876 96.6 34.4729 96.1045 34.4727 95.6055V86.7188H65.5273V95.6055C65.5271 96.1045 65.6124 96.6 65.7793 97.0703H34.2207ZM78.418 95.6055C78.4176 95.9938 78.2631 96.3662 77.9885 96.6408C77.7138 96.9154 77.3415 97.0699 76.9531 97.0703H69.9219C69.5335 97.0699 69.1612 96.9154 68.8865 96.6408C68.6119 96.3662 68.4574 95.9938 68.457 95.6055V86.7188H78.418V95.6055ZM84.4727 79.3945C84.4713 80.5596 84.0079 81.6766 83.184 82.5005C82.3602 83.3243 81.2432 83.7877 80.0781 83.7891H19.9219C18.7568 83.7877 17.6398 83.3243 16.816 82.5005C15.9921 81.6766 15.5287 80.5596 15.5273 79.3945V62.5938C16.7933 63.5485 18.3362 64.0641 19.9219 64.0625H80.0781C81.6638 64.0641 83.2067 63.5485 84.4727 62.5938V79.3945ZM84.4727 56.7383C84.4713 57.9034 84.0079 59.0204 83.184 59.8442C82.3602 60.668 81.2432 61.1315 80.0781 61.1328H19.9219C18.7568 61.1315 17.6398 60.668 16.816 59.8442C15.9921 59.0204 15.5287 57.9034 15.5273 56.7383V52.3438H84.4727V56.7383ZM84.4727 49.4141H51.4648V18.1641H84.4727V49.4141ZM84.4727 15.2344H15.5273V7.32422C15.5287 6.15913 15.9921 5.04214 16.816 4.2183C17.6398 3.39446 18.7568 2.93103 19.9219 2.92969H80.0781C81.2432 2.93103 82.3602 3.39446 83.184 4.2183C84.0079 5.04214 84.4713 6.15913 84.4727 7.32422V15.2344ZM97.0703 29.8828V41.4062H94.1406V29.8828H97.0703ZM60.3516 66.9922H39.6484C38.4833 66.9935 37.3664 67.457 36.5425 68.2808C35.7187 69.1046 35.2552 70.2216 35.2539 71.3867V76.4648C35.2552 77.6299 35.7187 78.7469 36.5425 79.5708C37.3664 80.3946 38.4833 80.858 39.6484 80.8594H60.3516C61.5167 80.858 62.6336 80.3946 63.4575 79.5708C64.2813 78.7469 64.7448 77.6299 64.7461 76.4648V71.3867C64.7448 70.2216 64.2813 69.1046 63.4575 68.2808C62.6336 67.457 61.5167 66.9935 60.3516 66.9922ZM61.8164 76.4648C61.816 76.8532 61.6615 77.2256 61.3869 77.5002C61.1123 77.7748 60.7399 77.9293 60.3516 77.9297H39.6484C39.2601 77.9293 38.8877 77.7748 38.6131 77.5002C38.3385 77.2256 38.184 76.8532 38.1836 76.4648V71.3867C38.184 70.9983 38.3385 70.626 38.6131 70.3514C38.8877 70.0768 39.2601 69.9223 39.6484 69.9219H60.3516C60.7399 69.9223 61.1123 70.0768 61.3869 70.3514C61.6615 70.626 61.816 70.9983 61.8164 71.3867V76.4648ZM25.3906 66.9922C24.0193 66.9922 22.6788 67.3988 21.5385 68.1607C20.3983 68.9226 19.5096 70.0055 18.9848 71.2724C18.46 72.5394 18.3227 73.9335 18.5903 75.2785C18.8578 76.6234 19.5182 77.8589 20.4878 78.8286C21.4575 79.7983 22.693 80.4586 24.0379 80.7262C25.3829 80.9937 26.777 80.8564 28.044 80.3316C29.3109 79.8068 30.3938 78.9181 31.1557 77.7779C31.9176 76.6377 32.3242 75.2971 32.3242 73.9258C32.3222 72.0875 31.591 70.3251 30.2911 69.0253C28.9913 67.7254 27.2289 66.9943 25.3906 66.9922ZM25.3906 77.9297C24.5987 77.9297 23.8246 77.6949 23.1662 77.2549C22.5077 76.815 21.9945 76.1896 21.6915 75.458C21.3885 74.7264 21.3092 73.9213 21.4637 73.1447C21.6181 72.368 21.9995 71.6545 22.5594 71.0946C23.1194 70.5346 23.8328 70.1533 24.6095 69.9988C25.3862 69.8443 26.1912 69.9236 26.9229 70.2267C27.6545 70.5297 28.2798 71.0429 28.7197 71.7013C29.1597 72.3598 29.3945 73.1339 29.3945 73.9258C29.3933 74.9873 28.9711 76.005 28.2205 76.7557C27.4699 77.5063 26.4522 77.9285 25.3906 77.9297ZM74.6094 66.9922C73.238 66.9922 71.8975 67.3988 70.7573 68.1607C69.6171 68.9226 68.7284 70.0055 68.2036 71.2724C67.6788 72.5394 67.5415 73.9335 67.809 75.2785C68.0765 76.6234 68.7369 77.8589 69.7066 78.8286C70.6763 79.7983 71.9117 80.4586 73.2567 80.7262C74.6017 80.9937 75.9958 80.8564 77.2627 80.3316C78.5297 79.8068 79.6126 78.9181 80.3745 77.7779C81.1363 76.6377 81.543 75.2971 81.543 73.9258C81.5409 72.0875 80.8097 70.3251 79.5099 69.0253C78.21 67.7254 76.4476 66.9943 74.6094 66.9922ZM74.6094 77.9297C73.8175 77.9297 73.0434 77.6949 72.3849 77.2549C71.7265 76.815 71.2133 76.1896 70.9102 75.458C70.6072 74.7264 70.5279 73.9213 70.6824 73.1447C70.8369 72.368 71.2182 71.6545 71.7782 71.0946C72.3381 70.5346 73.0516 70.1533 73.8282 69.9988C74.6049 69.8443 75.41 69.9236 76.1416 70.2267C76.8732 70.5297 77.4986 71.0429 77.9385 71.7013C78.3785 72.3598 78.6133 73.1339 78.6133 73.9258C78.6121 74.9873 78.1899 76.005 77.4392 76.7557C76.6886 77.5063 75.6709 77.9285 74.6094 77.9297ZM22.7486 7.61719C22.4589 7.61719 22.1757 7.7031 21.9348 7.86406C21.6939 8.02502 21.5062 8.25379 21.3953 8.52146C21.2844 8.78913 21.2554 9.08366 21.3119 9.36781C21.3685 9.65196 21.508 9.91297 21.7128 10.1178C21.9177 10.3227 22.1787 10.4622 22.4629 10.5187C22.747 10.5752 23.0415 10.5462 23.3092 10.4354C23.5769 10.3245 23.8056 10.1367 23.9666 9.89585C24.1276 9.65496 24.2135 9.37175 24.2135 9.08203C24.2135 8.69353 24.0591 8.32094 23.7844 8.04623C23.5097 7.77152 23.1371 7.61719 22.7486 7.61719ZM69.1406 7.61719H30.8594C30.4709 7.61719 30.0983 7.77152 29.8236 8.04623C29.5489 8.32094 29.3945 8.69353 29.3945 9.08203C29.3945 9.47053 29.5489 9.84312 29.8236 10.1178C30.0983 10.3925 30.4709 10.5469 30.8594 10.5469H69.1406C69.5291 10.5469 69.9017 10.3925 70.1764 10.1178C70.4511 9.84312 70.6055 9.47053 70.6055 9.08203C70.6055 8.69353 70.4511 8.32094 70.1764 8.04623C69.9017 7.77152 69.5291 7.61719 69.1406 7.61719Z"
+                  fill="#128799"
+                />
+              </svg>
+
+              <p class="mt-3">N20 (Կայարան-Բաթումի փողոց)</p>
+              <button class="btn__primary mt-5 w-100">Ավելին</button>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box__border d-flex flex-column align-items-center">
+              <h3>Հավասարություն բոլորի համար</h3>
+              <svg
+                class="mt-3"
+                width="100"
+                height="100"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M50 76.1021V14.6847M93.1847 9.2655H55.4193M44.5808 9.2655H6.81543M70.9577 86.127H29.0404C26.6815 86.127 24.4193 87.0641 22.7513 88.7321C21.0833 90.4001 20.1462 92.6624 20.1462 95.0213V96.154H79.852V95.0213C79.852 92.6624 78.9149 90.4001 77.2469 88.7321C75.5789 87.0641 73.3166 86.127 70.9577 86.127ZM60.3 76.1021H39.6981C37.3392 76.1021 35.0769 77.0391 33.409 78.7071C31.741 80.3751 30.8039 82.6374 30.8039 84.9963V86.127H69.1924V84.9963C69.1924 82.6374 68.2553 80.3751 66.5873 78.7071C64.9193 77.0391 62.657 76.1021 60.2981 76.1021H60.3ZM81.9135 55.2713C73.552 55.2713 68.1135 46.4732 71.8539 38.9944L81.9135 9.25781L91.9731 38.9944C95.7135 46.4732 90.2731 55.2713 81.9135 55.2713ZM18.0847 55.2713C9.72312 55.2713 4.28466 46.4732 8.02504 38.9944L18.0827 9.25781L28.1443 38.9944C31.8827 46.4732 26.4462 55.2713 18.0847 55.2713Z"
+                  stroke="#128799"
+                  stroke-width="3"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M50 14.6847C52.993 14.6847 55.4193 12.2584 55.4193 9.26542C55.4193 6.27246 52.993 3.84619 50 3.84619C47.0071 3.84619 44.5808 6.27246 44.5808 9.26542C44.5808 12.2584 47.0071 14.6847 50 14.6847Z"
+                  stroke="#128799"
+                  stroke-width="3"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.98071 42.2693H29.1865M70.8115 42.2693H93.0153"
+                  stroke="#128799"
+                  stroke-width="3"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p class="mt-3">
+                «Հավասարություն` բոլորի համար» ծրագիրը ստեղծված է նպաստելու
+                Վանաձոր քաղաքում բնակվող 18-30 տարեկան հաշմ...
+              </p>
+              <button class="btn__primary mt-5 w-100">Ավելին</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 mt-2 contacts">
+              <h3>Կապ</h3>
+              <div class="d-flex mt-3 gap-2 align-items-center">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.875 13.6875C12.1291 13.6875 11.4137 13.3912 10.8863 12.8637C10.3588 12.3363 10.0625 11.6209 10.0625 10.875C10.0625 10.1291 10.3588 9.41371 10.8863 8.88626C11.4137 8.35882 12.1291 8.0625 12.875 8.0625C13.6209 8.0625 14.3363 8.35882 14.8637 8.88626C15.3912 9.41371 15.6875 10.1291 15.6875 10.875C15.6875 11.2443 15.6148 11.6101 15.4734 11.9513C15.3321 12.2925 15.1249 12.6026 14.8637 12.8637C14.6026 13.1249 14.2925 13.3321 13.9513 13.4734C13.6101 13.6148 13.2443 13.6875 12.875 13.6875ZM12.875 3C10.7864 3 8.78338 3.82969 7.30653 5.30653C5.82969 6.78338 5 8.78642 5 10.875C5 16.7812 12.875 25.5 12.875 25.5C12.875 25.5 20.75 16.7812 20.75 10.875C20.75 8.78642 19.9203 6.78338 18.4435 5.30653C16.9666 3.82969 14.9636 3 12.875 3Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>ՀՀ․ք․ Վանաձոր, Տիգրան Մեծի 22</p>
+              </div>
+              <div class="d-flex mt-3 gap-2 align-items-center">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.6337 17.1675L18.7762 16.8412C18.4402 16.8018 18.0997 16.839 17.7801 16.95C17.4606 17.0611 17.1703 17.2431 16.9312 17.4825L14.8612 19.5525C11.6676 17.9282 9.07174 15.3324 7.44748 12.1387L9.52873 10.0575C10.0125 9.57373 10.2487 8.89873 10.17 8.21248L9.84373 5.37748C9.77995 4.82868 9.51658 4.3225 9.10375 3.95531C8.69092 3.58812 8.15748 3.38558 7.60499 3.38623H5.65874C4.38749 3.38623 3.32998 4.44373 3.40873 5.71498C4.00498 15.3225 11.6887 22.995 21.285 23.5912C22.5562 23.67 23.6137 22.6125 23.6137 21.3412V19.395C23.625 18.2587 22.77 17.3025 21.6337 17.1675Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <p>(+ 374 322) 2 26 48</p>
+              </div>
+              <div class="d-flex mt-3 gap-2 align-items-center">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5 22.5C3.88125 22.5 3.35175 22.2799 2.9115 21.8396C2.47125 21.3994 2.25075 20.8695 2.25 20.25V6.75C2.25 6.13125 2.4705 5.60175 2.9115 5.1615C3.3525 4.72125 3.882 4.50075 4.5 4.5H22.5C23.1187 4.5 23.6486 4.7205 24.0896 5.1615C24.5306 5.6025 24.7507 6.132 24.75 6.75V20.25C24.75 20.8687 24.5299 21.3986 24.0896 21.8396C23.6494 22.2806 23.1195 22.5007 22.5 22.5H4.5ZM13.5 14.625L22.5 9V6.75L13.5 12.375L4.5 6.75V9L13.5 14.625Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <p>
+                  vanadzor.lori@mta.gov.am <br />
+                  info@vanadzor.am
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 mt-2 contacts">
+              <h3>Հետևեք Մեզ</h3>
+              <div class="d-flex mt-3 align-items-center gap-3 socials">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/09da/d944/ba5a99e09a584dbbb6368257fbe54848?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KSAnLgJGcTj0Dk29qmFKWM~zGdYVLhk7HIbOI4TpDU5ZPmWD8icXmYmXS4Co791fdKQvTZzS1VB4WAp7QMw5xJ9Llk2S12r7a7k5wcNHfON8QN4RM0XtzT~95nuxK44fWfefTPiAF5e9g1tcJ-3Dz32ytlca29FTSS0beVhY-FwpRhhMfyVN97CdMy060vD0-FDrThVCJucet9f~GxtKQrJjw80O2SDFlMibemQ4pbsGvVvRmiSaVRFIVJy3ctwFwabZ5EIofob-GXe85R5FkDUmTvbGvAzo7m~RpHYJG9AwO3ElVYJBjYXSBOicC6yLVyisZlMUsBBMtADxryKm8A__"
+                />
+                <img src="assets/logos_facebook.png" />
+                <img src="assets/logos_youtube-icon.png" />
+              </div>
+              <h3 class="mt-3">Օգտակար Հղումներ</h3>
+              <div class="d-flex mt-3 flex-wrap gap-3 links">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/af5c/60fb/9e3fc463aa25547c5877295bd926e254?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KWgJH~w25QOf2hTvsEkMzfiiW7X32cqWyCti5jHidcreOKH-Mtjo2VRCyheH~G7qj0Gr1TcfkRcFwi4CTrrg0PfRZ5ZSEqw-LCwUUrArPWd2wb5V7OPzVqNTMEVyZtThQQeu6kqqYyDHTul~P-IR4UAgzmgcyN9yTdCNNLZ9DBWNPNMCS3vAw0xM9CkxkPG6SexHFJLhockiYBFYyVeEr4Hp4BIEhnmgF5iYP6jkZSsEaTCsEBB7HDYwtUSSzFot80Mf5yig5qoPySQRnK86FB45zNf1qUZP38VFn05Lopx2oT1UNhWEwGIZmztyjGqHk3XDK6dK7eTMZgoAxteCDA__"
+                />
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/e820/5fe3/01e68bb8a6a9d2ca9e46952f44c8f567?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AUu1pSndRBLdMUgXIve-J60bFoaZ2-TLtpRxtssfSR~0vpdjDIna633q4SrgxzKIkyhfhfn5X8LDvFTB4gSnlyI72QC2pjLxwOOtzOQH2xZkFaWrAHYIXQ3Hbp~DNGJr2VAyUOKAS5FNz4ig2fwEjPRuhphGMvvvFaHPS6h-K6Z8Ay2~9v007WcHvnhwWB9FsxBpTbgTF3CYLznh2i2XipvECWlhtXSk-i5OFghT6tSEcmGR5anmTDThN2IBEQ9oFSUjM081cgM2ZnKzftGTubB2iXYy5viSB0hk97G34zsNdJqJIe0f7MHpff11VO~qgo4sFsq7XegZK2o~Tk9utw__"
+                />
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/b66e/7d80/a3435844dab2b6eaffd3b9001c309a2a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j6JCpgip6hFkHxXFHb08jl06AoSZ2mNUbRALzrpGSx8W9KiAr~2tT13rEyASJcWHQHYg~2hVF09GVwK9D3EZstJws16UnIhJ6STYFebzO19ZRHx-vMwhCE2g22yH78LVVI~vQzh5TtLB6BNAw0WJmGbU8uZOiIhgIBNWKa3nWl03ChnI0s-85-GQB6owgyCwBiBSDhqLUUoC5LZb8XLx9SBylvSYQOKPqCSwF7Tg-0uNCQ9O5Mh1gLAEEiPifnxlY16PCs2RQVgTNDSTxPFa7DqkiXWmbhGYAoXtQwrzUZVEBljfjPyYjyCPGgkvLH7Xyw7Ph5abisUb7ehATT-c5g__"
+                />
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/34fb/cafa/bc5438193a4763856fbad8f881411138?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aEBgDZNTANUGUtINu5XxE7giRhOvSodgWMGmybiR4C3W1aq7iJLFnS3GgbJFRT4VVZXzxI2B7cD3fTPmPRC0x0tR7gXGr-z2xSLvoa5L9jksJvdQU6pRwER1-E~yZS1RKCEuPtRn0ciaaVG1WhxFz0ySbt~UdJM3gp6nl6vZ63TPC8BGSq8HS4777baHePW7KGTyzmpi4zRty5yiBOzYYI3n4lDM76fKcanufUvRIJqZprbeD8nS67FeNT98elkj6IXGMLB40xqHJx-Dk8kyk2MTrzeQOAmyfbUXkN5UD~2sQihSSmfBL385V6IcA~ImzVO2pSQJ-5-YgAyFoURKxA__"
+                />
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/b964/0c9b/740128b09681d9808063bcfa92b1e0ba?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mvNDw0ch~C~Cw7DXDOw~r8fApvLKIDf-hZ160EZP6hKQgIrDC4zAQvrq79712PdWLLxyNxgti5QARwAYY-oroK4Wb4jz6dXrUss17~ruyfB0iAAxf3kujhQuo43gQRCXVasxD-W~k4SNTYDVHxeOr7Au4P~QCRk8d0rXY12pz9OUz2qJaKjLVibjTQSxJq2Qcx-disuZsq35U02ryuog9BTrxR9e5XclHzRl~sfZ4OGO9w3LajyD30GKdvNneZ56IJOCFyOgABzfjtO3x3Lmx7-Nr6dnfJcqp8cAn7PkohDBgog7jptTOmgzks6m1BDdUKBGEEgi9iG0TSUkVdSf7g__"
+                />
+              </div>
+            </div>
+            <div class="col-lg-3 mt-2 d-none d-sm-block">
+              <div class="d-flex flex-wrap gap-2" style="color: white">
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-2">
+              <input class="form-input w-100" placeholder="Անուն,ազգանուն" />
+              <input class="form-input w-100 mt-3" placeholder="Էլ․ հասցե" />
+              <div class="d-flex checkbox__container mt-3">
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  name="checkbox"
+                  value="Yes"
+                />
+                <label for="checkbox"
+                  >Շարունակելով՝ դուք ընդունում եք գաղտնիության
+                  պայմաննները</label
+                >
+              </div>
+              <button class="btn__primary w-100 mt-3">Բաժանորդագրվել</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          Հեղինակային իրավունք © 2024 Վանաձորի Համայնքապետարանի Պաշտոնական Կայք
+        </p>
+        <img
+          src="https://s3-alpha-sig.figma.com/img/77ed/78c6/3223d9207ff5a31217155495a2f2fe42?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DKyrAB~mq93E1~063kOPbYHfv0OBO4NBNTYx2PyyLresXp~MYH2CeluUhbNl8mCZ8g~mYVrdqHjPhgM5Q8ABF1pbiH5lKAqghJHA0KerLj3KF5lee~mbRjAWtKzTrI1SYQkO1zJJewOTN8BGJyzn4oMPh47vIsamki2pbtMIN76mcfCTglY8o7cSb~zdYp~1Z2ak1T9KpkJGV0F5x~AsYpcNVUrclBKgHqQ3haHRGn-RmONgjyTiTyraNHe5A2sMq2OkYvliCPnkiDsiP9zLMauwQJ3TFNVoy2IMsY-TjTNleD-VX3K5pIQ-QA2ykyZVNSyb-SVbQWmkqLCKdfa32w__"
+        />
+      </div>
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

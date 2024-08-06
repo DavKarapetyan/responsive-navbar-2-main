@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive navbar - Bedimcode</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img
+            class="img__logo"
+            style="height: 64px; width: 44px"
+            src="https://s3-alpha-sig.figma.com/img/38a0/650d/b998c86e1b70bf4620fe1f6f729ceb23?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e~J4IlRgG9OtBVCQvXrzgIg4GOTXeIEjj4g3DignU31zGq2jIXZiSFLwy-oXN2t14djEmgxyXTFwe0fc6O~bgQBmVwKfDcxgPG1gDpWfZuckH~CdDP-wUonXVU~qxpjjlQPGs7hmZlQW~EOTkflWFXXVOu~JtzbdR4wruc4Vw~OzolXjXOrT9AGIbv9vas186l75rzERvaAsoJ8y4hP-Viy~Z7t5X5O9rt-5-bLLIW8ZraiPGgIv3~yzR9MeiF2DBdULt0i~KAuLbIXONx4PR3uX7NK8nQDJ7ONDWHO2b-BV~tKr6rD6l-XNokzXOMgrr2Kigm-BYZvGaNRatBxFJw__"
+          />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link">
+                <span>Լուրեր</span>
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Submenu Item 1</a></li>
+                <li><a href="#">Submenu Item 2</a></li>
+                <li><a href="#">Submenu Item 3</a></li>
+              </ul>
+            </li>
+
+            <!-- <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Լուրեր</span>
+              </a>
+            </li> -->
+
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link">
+                <span>Տիմ</span>
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Համայնքի ղեկավար</a></li>
+                <li><a href="#">Ավագանի</a></li>
+                <li class="submenu-item">
+                  <a href="#">Աշխատակազմ</a>
+                  <i class="ri-arrow-right-s-line"></i>
+                  <ul class="submenu">
+                    <li><a href="#">Աշխատակազմ</a></li>
+                    <li><a href="#">Ավագանի</a></li>
+                    <li><a href="#">Աշխատակազմ</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Համայնքի բյուջե</a></li>
+                <li><a href="#">Տուրքեր և վճարումներ</a></li>
+                <li><a href="#">Հաշվետվություններ</a></li>
+                <li><a href="#">Հանձնաժողովներ</a></li>
+                <li><a href="#">Ենթակայության հիմնարկներ</a></li>
+                <li class="submenu-item">
+                  <a href="#">Քաղաքաշինություն</a>
+                  <i class="ri-arrow-right-s-line"></i>
+                  <ul class="submenu">
+                    <li><a href="#">Սուբ-կատեգորիա 1</a></li>
+                    <li><a href="#">Սուբ-կատեգորիա 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Աճուրդներ</a></li>
+                <li><a href="#">Մրցույթներ</a></li>
+              </ul>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <span>Մեր Քաղաք</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <span>Ծրագրեր</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <span>Գնումներ</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <span>Մեդիա</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <span>Կապ</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="search">
+            <input class="form-input" placeholder="Որոնել" />
+          </div>
+          <div class="d-flex">
+            <h6 style="font-weight: 600">Հայ</h6>
+            <img
+              class="img-fluid rounded-circle"
+              style="width: 24px; height: 24px; margin-left: 4px"
+              src="https://s3-alpha-sig.figma.com/img/1906/0669/86d57c5876a6ed041d4429c6d6ef363e?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=koB3agL6zTYMzJxSlEz00ruW5nMA5BPuMYLJEa9t5iIrVmbReWgbk4SINyi8OfG6E0RZ~4oW5QtRoLmfclqDE1dJgTS3q5h96t67uZiHtdJ5-A8hUP5me8ceqMEexsvIMxDKbI60dCMSmlSI~6ulTBPBlLv7qQ75cFoVZuYr-lz1Daz~~w9SAQvBTqb3YblpIMqBRi7E7QIJmXcOlWhIQs7nBE9QADDKfXbrVv5tQFx-63QBDdkU6jky78wnf7XsiJFTZ98X59x-osJ4jtt61FmBTVex5RA28dwHAvODbzHKj-Ow7V2EfsgFJpRaEZqEia42id6CqH~jaOoDJAnu9A__"
+            />
+          </div>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <div class="mobile__top">
+              <a href="#" class="nav__logo">
+                <img
+                  style="height: 64px; width: 44px"
+                  src="https://s3-alpha-sig.figma.com/img/38a0/650d/b998c86e1b70bf4620fe1f6f729ceb23?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e~J4IlRgG9OtBVCQvXrzgIg4GOTXeIEjj4g3DignU31zGq2jIXZiSFLwy-oXN2t14djEmgxyXTFwe0fc6O~bgQBmVwKfDcxgPG1gDpWfZuckH~CdDP-wUonXVU~qxpjjlQPGs7hmZlQW~EOTkflWFXXVOu~JtzbdR4wruc4Vw~OzolXjXOrT9AGIbv9vas186l75rzERvaAsoJ8y4hP-Viy~Z7t5X5O9rt-5-bLLIW8ZraiPGgIv3~yzR9MeiF2DBdULt0i~KAuLbIXONx4PR3uX7NK8nQDJ7ONDWHO2b-BV~tKr6rD6l-XNokzXOMgrr2Kigm-BYZvGaNRatBxFJw__"
+                />
+              </a>
+              <i class="ri-close-large-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <svg
+            width="21"
+            height="14"
+            viewBox="0 0 21 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.25 1H19.25M1.25 7H19.25M1.25 13H19.25"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main>
+      <div class="container mt-5">
+        <div
+          class="d-flex align-items-center justify-content-between"
+          style="width: 30%"
+        >
+          <h5>Գլխավոր</h5>
+          <h5 style="color: #128799">/</h5>
+          <h5>Մեր քաղաքը</h5>
+          <h5 style="color: #128799">/</h5>
+          <h5>Պատմական ակնարկ</h5>
+        </div>
+        <h2 class="mt-2">Լուրեր</h2>
+        <div class="d-flex flex-wrap gap-3 mt-3">
+          <button class="btn__primary__outline px-5">
+            Շինարարության թույլտվություններ
+          </button>
+          <button class="btn__primary__outline px-5">
+            Շինարարության ավարտական ակտեր
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 mt-2 contacts">
+              <h3>Կապ</h3>
+              <div class="d-flex mt-3 gap-2 align-items-center">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.875 13.6875C12.1291 13.6875 11.4137 13.3912 10.8863 12.8637C10.3588 12.3363 10.0625 11.6209 10.0625 10.875C10.0625 10.1291 10.3588 9.41371 10.8863 8.88626C11.4137 8.35882 12.1291 8.0625 12.875 8.0625C13.6209 8.0625 14.3363 8.35882 14.8637 8.88626C15.3912 9.41371 15.6875 10.1291 15.6875 10.875C15.6875 11.2443 15.6148 11.6101 15.4734 11.9513C15.3321 12.2925 15.1249 12.6026 14.8637 12.8637C14.6026 13.1249 14.2925 13.3321 13.9513 13.4734C13.6101 13.6148 13.2443 13.6875 12.875 13.6875ZM12.875 3C10.7864 3 8.78338 3.82969 7.30653 5.30653C5.82969 6.78338 5 8.78642 5 10.875C5 16.7812 12.875 25.5 12.875 25.5C12.875 25.5 20.75 16.7812 20.75 10.875C20.75 8.78642 19.9203 6.78338 18.4435 5.30653C16.9666 3.82969 14.9636 3 12.875 3Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>ՀՀ․ք․ Վանաձոր, Տիգրան Մեծի 22</p>
+              </div>
+              <div class="d-flex mt-3 gap-2 align-items-center">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.6337 17.1675L18.7762 16.8412C18.4402 16.8018 18.0997 16.839 17.7801 16.95C17.4606 17.0611 17.1703 17.2431 16.9312 17.4825L14.8612 19.5525C11.6676 17.9282 9.07174 15.3324 7.44748 12.1387L9.52873 10.0575C10.0125 9.57373 10.2487 8.89873 10.17 8.21248L9.84373 5.37748C9.77995 4.82868 9.51658 4.3225 9.10375 3.95531C8.69092 3.58812 8.15748 3.38558 7.60499 3.38623H5.65874C4.38749 3.38623 3.32998 4.44373 3.40873 5.71498C4.00498 15.3225 11.6887 22.995 21.285 23.5912C22.5562 23.67 23.6137 22.6125 23.6137 21.3412V19.395C23.625 18.2587 22.77 17.3025 21.6337 17.1675Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <p>(+ 374 322) 2 26 48</p>
+              </div>
+              <div class="d-flex mt-3 gap-2 align-items-center">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5 22.5C3.88125 22.5 3.35175 22.2799 2.9115 21.8396C2.47125 21.3994 2.25075 20.8695 2.25 20.25V6.75C2.25 6.13125 2.4705 5.60175 2.9115 5.1615C3.3525 4.72125 3.882 4.50075 4.5 4.5H22.5C23.1187 4.5 23.6486 4.7205 24.0896 5.1615C24.5306 5.6025 24.7507 6.132 24.75 6.75V20.25C24.75 20.8687 24.5299 21.3986 24.0896 21.8396C23.6494 22.2806 23.1195 22.5007 22.5 22.5H4.5ZM13.5 14.625L22.5 9V6.75L13.5 12.375L4.5 6.75V9L13.5 14.625Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <p>
+                  vanadzor.lori@mta.gov.am <br />
+                  info@vanadzor.am
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 mt-2 contacts">
+              <h3>Հետևեք Մեզ</h3>
+              <div class="d-flex mt-3 align-items-center gap-3 socials">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/09da/d944/ba5a99e09a584dbbb6368257fbe54848?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KSAnLgJGcTj0Dk29qmFKWM~zGdYVLhk7HIbOI4TpDU5ZPmWD8icXmYmXS4Co791fdKQvTZzS1VB4WAp7QMw5xJ9Llk2S12r7a7k5wcNHfON8QN4RM0XtzT~95nuxK44fWfefTPiAF5e9g1tcJ-3Dz32ytlca29FTSS0beVhY-FwpRhhMfyVN97CdMy060vD0-FDrThVCJucet9f~GxtKQrJjw80O2SDFlMibemQ4pbsGvVvRmiSaVRFIVJy3ctwFwabZ5EIofob-GXe85R5FkDUmTvbGvAzo7m~RpHYJG9AwO3ElVYJBjYXSBOicC6yLVyisZlMUsBBMtADxryKm8A__"
+                />
+                <img src="assets/logos_facebook.png" />
+                <img src="assets/logos_youtube-icon.png" />
+              </div>
+              <h3 class="mt-3">Օգտակար Հղումներ</h3>
+              <div class="d-flex mt-3 flex-wrap gap-3 links">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/af5c/60fb/9e3fc463aa25547c5877295bd926e254?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KWgJH~w25QOf2hTvsEkMzfiiW7X32cqWyCti5jHidcreOKH-Mtjo2VRCyheH~G7qj0Gr1TcfkRcFwi4CTrrg0PfRZ5ZSEqw-LCwUUrArPWd2wb5V7OPzVqNTMEVyZtThQQeu6kqqYyDHTul~P-IR4UAgzmgcyN9yTdCNNLZ9DBWNPNMCS3vAw0xM9CkxkPG6SexHFJLhockiYBFYyVeEr4Hp4BIEhnmgF5iYP6jkZSsEaTCsEBB7HDYwtUSSzFot80Mf5yig5qoPySQRnK86FB45zNf1qUZP38VFn05Lopx2oT1UNhWEwGIZmztyjGqHk3XDK6dK7eTMZgoAxteCDA__"
+                />
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/e820/5fe3/01e68bb8a6a9d2ca9e46952f44c8f567?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AUu1pSndRBLdMUgXIve-J60bFoaZ2-TLtpRxtssfSR~0vpdjDIna633q4SrgxzKIkyhfhfn5X8LDvFTB4gSnlyI72QC2pjLxwOOtzOQH2xZkFaWrAHYIXQ3Hbp~DNGJr2VAyUOKAS5FNz4ig2fwEjPRuhphGMvvvFaHPS6h-K6Z8Ay2~9v007WcHvnhwWB9FsxBpTbgTF3CYLznh2i2XipvECWlhtXSk-i5OFghT6tSEcmGR5anmTDThN2IBEQ9oFSUjM081cgM2ZnKzftGTubB2iXYy5viSB0hk97G34zsNdJqJIe0f7MHpff11VO~qgo4sFsq7XegZK2o~Tk9utw__"
+                />
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/b66e/7d80/a3435844dab2b6eaffd3b9001c309a2a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j6JCpgip6hFkHxXFHb08jl06AoSZ2mNUbRALzrpGSx8W9KiAr~2tT13rEyASJcWHQHYg~2hVF09GVwK9D3EZstJws16UnIhJ6STYFebzO19ZRHx-vMwhCE2g22yH78LVVI~vQzh5TtLB6BNAw0WJmGbU8uZOiIhgIBNWKa3nWl03ChnI0s-85-GQB6owgyCwBiBSDhqLUUoC5LZb8XLx9SBylvSYQOKPqCSwF7Tg-0uNCQ9O5Mh1gLAEEiPifnxlY16PCs2RQVgTNDSTxPFa7DqkiXWmbhGYAoXtQwrzUZVEBljfjPyYjyCPGgkvLH7Xyw7Ph5abisUb7ehATT-c5g__"
+                />
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/34fb/cafa/bc5438193a4763856fbad8f881411138?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aEBgDZNTANUGUtINu5XxE7giRhOvSodgWMGmybiR4C3W1aq7iJLFnS3GgbJFRT4VVZXzxI2B7cD3fTPmPRC0x0tR7gXGr-z2xSLvoa5L9jksJvdQU6pRwER1-E~yZS1RKCEuPtRn0ciaaVG1WhxFz0ySbt~UdJM3gp6nl6vZ63TPC8BGSq8HS4777baHePW7KGTyzmpi4zRty5yiBOzYYI3n4lDM76fKcanufUvRIJqZprbeD8nS67FeNT98elkj6IXGMLB40xqHJx-Dk8kyk2MTrzeQOAmyfbUXkN5UD~2sQihSSmfBL385V6IcA~ImzVO2pSQJ-5-YgAyFoURKxA__"
+                />
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/b964/0c9b/740128b09681d9808063bcfa92b1e0ba?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mvNDw0ch~C~Cw7DXDOw~r8fApvLKIDf-hZ160EZP6hKQgIrDC4zAQvrq79712PdWLLxyNxgti5QARwAYY-oroK4Wb4jz6dXrUss17~ruyfB0iAAxf3kujhQuo43gQRCXVasxD-W~k4SNTYDVHxeOr7Au4P~QCRk8d0rXY12pz9OUz2qJaKjLVibjTQSxJq2Qcx-disuZsq35U02ryuog9BTrxR9e5XclHzRl~sfZ4OGO9w3LajyD30GKdvNneZ56IJOCFyOgABzfjtO3x3Lmx7-Nr6dnfJcqp8cAn7PkohDBgog7jptTOmgzks6m1BDdUKBGEEgi9iG0TSUkVdSf7g__"
+                />
+              </div>
+            </div>
+            <div class="col-lg-3 mt-2 d-none d-sm-block">
+              <div class="d-flex flex-wrap gap-2" style="color: white">
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+                <a>Լինկ 1</a>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-2">
+              <input class="form-input w-100" placeholder="Անուն,ազգանուն" />
+              <input class="form-input w-100 mt-3" placeholder="Էլ․ հասցե" />
+              <div class="d-flex checkbox__container mt-3">
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  name="checkbox"
+                  value="Yes"
+                />
+                <label for="checkbox"
+                  >Շարունակելով՝ դուք ընդունում եք գաղտնիության
+                  պայմաննները</label
+                >
+              </div>
+              <button class="btn__primary w-100 mt-3">Բաժանորդագրվել</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          Հեղինակային իրավունք © 2024 Վանաձորի Համայնքապետարանի Պաշտոնական Կայք
+        </p>
+        <img
+          src="https://s3-alpha-sig.figma.com/img/77ed/78c6/3223d9207ff5a31217155495a2f2fe42?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DKyrAB~mq93E1~063kOPbYHfv0OBO4NBNTYx2PyyLresXp~MYH2CeluUhbNl8mCZ8g~mYVrdqHjPhgM5Q8ABF1pbiH5lKAqghJHA0KerLj3KF5lee~mbRjAWtKzTrI1SYQkO1zJJewOTN8BGJyzn4oMPh47vIsamki2pbtMIN76mcfCTglY8o7cSb~zdYp~1Z2ak1T9KpkJGV0F5x~AsYpcNVUrclBKgHqQ3haHRGn-RmONgjyTiTyraNHe5A2sMq2OkYvliCPnkiDsiP9zLMauwQJ3TFNVoy2IMsY-TjTNleD-VX3K5pIQ-QA2ykyZVNSyb-SVbQWmkqLCKdfa32w__"
+        />
+      </div>
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
